@@ -1,0 +1,110 @@
+@use "../base" as *;
+footer {
+  margin-bottom: 40px;
+  .container2 {
+    .d6 {
+      padding-top: 80px;
+      background-color: $second-color;
+      .container1 {
+        .d7 {
+          display: flex;
+          justify-content: space-between;
+          .d1 {
+            .p1 {
+              color: var(--text-white, #fff);
+              font-size: 16px;
+              font-style: normal;
+              padding-top: 36px;
+              font-weight: 400;
+              max-width: 500px;
+              line-height: 27px; /* 168.75% */
+            }
+          }
+          .d2 {
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            .p2 {
+              color: var(--text-white, #fff);
+              font-family: "Rubik", sans-serif;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 32px;
+              padding-bottom: 24px;
+            }
+            .p3 {
+              color: var(--text-white, #fff);
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 32px;
+              padding-bottom: 8px;
+            }
+          }
+        }
+        .d3 {
+          padding-top: 72px;
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 40px;
+          .d4 {
+            display: flex;
+            column-gap: 40px;
+            .p4 {
+              color: var(--text-white, #fff);
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 27px;
+            }
+          }
+          .d5 {
+            .p4 {
+              color: var(--text-white, #fff);
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 27px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  footer {
+    .container2 {
+      .container1 {
+        .d7 {
+          flex-direction: column;
+          align-items: center;
+          row-gap: 30px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    .container2 {
+      .container1 {
+        .d7 {
+          flex-direction: column;
+          align-items: center;
+          row-gap: 30px;
+        }
+        .d3 {
+          flex-direction: column;
+          row-gap: 20px;
+          align-items: center;
+          .d4 {
+            flex-direction: column;
+            row-gap: 20px;
+          }
+        }
+      }
+    }
+  }
+}

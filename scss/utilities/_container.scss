@@ -1,0 +1,21 @@
+.container1 {
+  max-width: 1270px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+.container2 {
+  max-width: 1400px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+.mini-container {
+  max-width: 728px;
+}
+@media (max-width: 733px) {
+  .mini-container {
+    max-width: 600px;
+  }
+}
+.review-container {
+  max-width: 816px;
+}

@@ -1,0 +1,104 @@
+@use "../base" as *;
+.blog {
+  .blog-home {
+    background: #6a6a6a;
+    padding-top: 146px;
+    .container1 {
+      margin-bottom: 96px;
+      .d1 {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        padding-bottom: 64px;
+        .p1 {
+          color: var(--text-white, #fff);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+        }
+      }
+      .p3 {
+        color: var(--text-white, #fff);
+        font-family: "Rubik", sans-serif;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 88px;
+        padding-bottom: 120px;
+      }
+    }
+  }
+  .home-mentor {
+    #container1 {
+      padding-bottom: 56px;
+      .d1 {
+        #p1 {
+          max-width: 552px;
+          color: var(--text-tittle, #1c3554);
+          font-family: "Rubik", sans-serif;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 48px; /* 150% */
+          text-transform: capitalize;
+        }
+        #d2 {
+          padding-top: 16px;
+          display: flex;
+          align-items: center;
+          column-gap: 16px;
+          .p10 {
+            color: var(--text-body, #808080);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 171.429% */
+          }
+        }
+        #p2 {
+          padding-top: 16px;
+          padding-bottom: 72px;
+        }
+      }
+    }
+    .container1 {
+      .all-courses-bottom {
+        display: flex;
+        column-gap: 16px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 160px;
+        .number {
+          width: 32px;
+          height: 32px;
+          &:hover {
+            border-radius: 4px;
+            background: var(--primary-pink, #f72585);
+            &:hover .p1 {
+              color: var(--text-white, #fff);
+              text-align: center;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 32px;
+            }
+          }
+          .p1 {
+            color: var(--text-in-field, #ccc);
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 200% */
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .photo8 {
+    width: 99%;
+  }
+}

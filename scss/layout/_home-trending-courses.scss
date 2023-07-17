@@ -1,0 +1,108 @@
+@use "../base" as *;
+.home-trending {
+  .container1 {
+    .home-trending-top {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .p1 {
+        color: var(--text-tittle, #1c3554);
+        padding-top: 88px;
+        font-family: "Rubik", sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 63.984px; /* 133.3% */
+        padding-bottom: 56px;
+      }
+      .d1 {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        .d2 {
+          transition: 0.6s;
+          border-radius: 8px;
+          background: var(--text-white, #fff);
+          padding: 8px 32px;
+          .p2 {
+            color: var(--other-grey, #aaa);
+            font-size: 16px;
+            font-style: normal;
+            width: 103px;
+            text-align: center;
+            font-weight: 400;
+            line-height: 32px; /* 200% */
+          }
+          &:hover {
+            border-radius: 8px;
+            background: var(--primary-pink, #f72585);
+          }
+          &:hover p {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .home-trending-bottom {
+      padding-bottom: 56px;
+      .cards {
+        display: flex;
+        column-gap: 16px;
+        padding-top: 32px;
+        .d7 {
+          display: flex;
+          column-gap: 16px;
+        }
+      }
+    }
+    .trending-courses-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 160px;
+    }
+  }
+}
+@media (max-width: 1290px) {
+  .home-trending {
+    .container1 {
+      .home-trending-bottom {
+        .cards {
+          flex-direction: column;
+          align-items: center;
+          row-gap: 20px;
+          .d7 {
+            justify-content: space-between;
+            column-gap: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 955px) {
+  .home-trending {
+    .container1 {
+      .home-trending-top {
+        .d1 {
+          flex-direction: column;
+          row-gap: 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .home-trending {
+    .container1 {
+      .home-trending-bottom {
+        .cards {
+          .d7 {
+            flex-direction: column;
+            row-gap: 20px;
+          }
+        }
+      }
+    }
+  }
+}

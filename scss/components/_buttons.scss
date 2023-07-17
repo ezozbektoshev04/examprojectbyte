@@ -1,0 +1,294 @@
+@use "../base" as *;
+#btn1 {
+  border: #fff;
+}
+.btn1 {
+  border-radius: 8px;
+  border: 1px solid var(--text-tittle, #1c3554);
+  padding: 8px 32px;
+  a {
+    color: var(--text-tittle, #1c3554);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+}
+.btn2 {
+  border-radius: 8px;
+  padding: 8px 32px;
+  background-color: $card-text-color;
+  a {
+    color: $text-white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+}
+.btn3 {
+  border-radius: 8px;
+  padding: 12px 32px;
+  background-color: $card-text-color;
+  a {
+    color: $text-white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+}
+.btn4 {
+  border-radius: 8px;
+  padding: 14px 24px;
+  background-color: $card-text-color;
+  width: 288px;
+  a {
+    color: $text-white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+}
+.btn5 {
+  border-radius: 8px;
+  padding: 16px 40px;
+  background-color: $card-text-color;
+  a {
+    color: $text-white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+}
+.btn6 {
+  border-radius: 8px;
+  padding: 16px 100px;
+  background-color: $card-text-color;
+  a {
+    color: var(--text-white, #fff);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+  }
+}
+.btn8 {
+  border-radius: 8px;
+  padding: 16px 40px;
+  background-color: $card-text-color;
+  a {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    color: var(--text-white, #fff);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+  }
+}
+.btn7 {
+  padding: 16px 40px;
+  border-radius: 8px;
+  background: var(--primary-20-pink, #fff5f9);
+  a {
+    color: var(--primary-pink, #f72585);
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+  }
+}
+.btn10 {
+  padding: 12px 32px;
+  border-radius: 8px;
+  background: var(--primary-20-pink, #fff5f9);
+  a {
+    color: var(--primary-pink, #f72585);
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+}
+.btn9 {
+  border-radius: 8px;
+  padding: 12px 32px;
+  background-color: $card-text-color;
+  a {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    color: var(--text-white, #fff);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+  }
+}
+
+.btn11 {
+  margin-top: 44px;
+  border-radius: 8px;
+  padding: 24px 40px;
+  border: 1px solid var(--primary-pink, #f72585);
+  transition: 0.5s;
+  background: var(--primary-pink, #f72585);
+  &:hover {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--primary-pink, #f72585);
+  }
+  &:hover a {
+    color: var(--primary-pink, #f72585);
+  }
+  a {
+    color: var(--other-white, #fff);
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    text-transform: capitalize;
+  }
+}
+.btn12 {
+  margin-top: 24px;
+  border-radius: 8px;
+  border: transparent;
+  padding: 24px 40px;
+  border: 1px solid var(--primary-pink, #f72585);
+  transition: 0.5s;
+  background: var(--primary-pink, #f72585);
+  &:hover {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--primary-pink, #f72585);
+  }
+  &:hover a {
+    color: var(--primary-pink, #f72585);
+  }
+  a {
+    color: var(--other-white, #fff);
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    text-transform: capitalize;
+  }
+}
+.btn13 {
+  margin-top: 40px;
+  border-radius: 8px;
+  border: transparent;
+  padding: 24px 40px;
+  border: 1px solid var(--primary-pink, #f72585);
+  transition: 0.5s;
+  background: var(--primary-pink, #f72585);
+  width: 728px;
+  &:hover {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--primary-pink, #f72585);
+  }
+  &:hover a {
+    color: var(--primary-pink, #f72585);
+  }
+  a {
+    color: var(--other-white, #fff);
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    text-transform: capitalize;
+  }
+}
+@media (max-width: 830px) {
+  .btn13 {
+    width: 600px;
+  }
+}
+@media (max-width: 620px) {
+  .btn13 {
+    width: 400px;
+  }
+}
+.btn15 {
+  margin-top: 40px;
+  border-radius: 8px;
+  border: transparent;
+  padding: 24px 40px;
+  border: 1px solid var(--primary-pink, #f72585);
+  transition: 0.5s;
+  background: var(--primary-pink, #f72585);
+  width: 816px;
+  &:hover {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--primary-pink, #f72585);
+  }
+  &:hover a {
+    color: var(--primary-pink, #f72585);
+  }
+  a {
+    color: var(--other-white, #fff);
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    text-transform: capitalize;
+  }
+}
+@media (max-width: 830px) {
+  .btn15 {
+    width: 600px;
+  }
+}
+@media (max-width: 420px) {
+  .btn15 {
+    width: 300px;
+  }
+}
+@media (max-width: 620px) {
+  .btn15 {
+    width: 400px;
+  }
+}
+@media (max-width: 420px) {
+  .btn15 {
+    width: 300px;
+  }
+}
+.btn14 {
+  border-radius: 8px;
+  border: transparent;
+  padding: 16px 40px;
+  background: var(--primary-pink, #f72585);
+  a {
+    column-gap: 10px;
+    display: flex;
+    align-items: center;
+    color: var(--other-white, #fff);
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    text-transform: capitalize;
+  }
+}

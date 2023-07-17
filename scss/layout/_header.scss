@@ -1,0 +1,174 @@
+@use "../base" as *;
+#header-details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+  background: #6a6a6a;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+  #input {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: #6a6a6a;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--text-white, #fff);
+  }
+  #select {
+    color: #fff;
+    background-color: transparent;
+  }
+  #p1 {
+    color: #fff;
+  }
+  #btn1 {
+    border: 1px solid #fff;
+    background-color: transparent;
+    a {
+      color: #fff;
+    }
+  }
+  #dark-mode-svg {
+    fill: white;
+  }
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+  background: $background-white;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+  .container1 {
+    .navbar-shrink {
+      padding: 24px 0;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      transition: 0.5s;
+      .nav-items {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        .nav-links {
+          display: flex;
+          align-items: center;
+          column-gap: 24px;
+          form {
+            .field {
+              display: flex;
+              align-items: center;
+              column-gap: 38px;
+              .search-bar {
+                position: relative;
+                input {
+                  border-radius: 8px;
+                  border: 1px solid var(--text-in-field, #ccc);
+                  padding-left: 16px;
+                  padding-top: 12px;
+                  padding-bottom: 12px;
+                  width: 443px;
+                  color: var(--text-body, #808080);
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 24px;
+                }
+                .search-icon {
+                  position: absolute;
+                  top: 12px;
+                  right: 16px;
+                }
+              }
+              select {
+                border: none;
+                color: var(--text-tittle, #1c3554);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+                width: 97px;
+                option {
+                  color: var(--text-tittle, #1c3554);
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 32px;
+                  margin-top: 40px;
+                }
+              }
+            }
+          }
+          .p1 {
+            color: var(--text-tittle, #1c3554);
+            font-family: Montserrat SemiBold;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+          }
+          .nav-btn {
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1270px) {
+  .nav-links {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    row-gap: 20px;
+    width: 100%;
+    position: fixed;
+    top: 81px;
+    z-index: 9;
+    left: -100%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 0px rgb(0 0 0 / 0.2);
+    padding-bottom: 20px;
+    transition: all 0.6s;
+  }
+  #nav-links {
+    background-color: #6a6a6a;
+  }
+  .open {
+    left: 0;
+  }
+
+  .menu {
+    display: block;
+  }
+  nav .nav-items .field {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  nav .nav-items .nav-btn {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  nav .nav-items input {
+    width: 300px;
+  }
+}
+@media (max-width: 450px) {
+  nav .nav-items .field .search-bar input {
+    width: 300px !important;
+  }
+}

@@ -1,0 +1,358 @@
+@use "../base" as *;
+.courses {
+  padding-top: 156px;
+  .courses-programming {
+    .d1 {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      padding-bottom: 24px;
+      .a1 {
+        color: var(--text-body, #808080);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 200% */
+      }
+      .a2 {
+        color: var(--text-tittle, #1c3554);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+      }
+    }
+    .d2 {
+      .p1 {
+        color: var(--text-tittle, #1c3554);
+        font-family: "Rubik", sans-serif;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 88px; /* 137.5% */
+      }
+      .p3 {
+        color: var(--text-body, #808080);
+        padding-top: 24px;
+        padding-bottom: 56px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        max-width: 712px;
+      }
+    }
+  }
+  .popular-courses {
+    .container1 {
+      .p1 {
+        color: var(--text-tittle, #1c3554);
+        font-family: "Rubik", sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px; /* 150% */
+        text-transform: capitalize;
+        padding-bottom: 32px;
+      }
+    }
+    .container2 {
+      padding-bottom: 160px;
+      .d1 {
+        display: flex;
+        align-items: center;
+        .container1 {
+          .cards {
+            display: flex;
+            column-gap: 16px;
+            .d7 {
+              display: flex;
+              column-gap: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .programming-topics {
+    padding-bottom: 160px;
+    .container1 {
+      .content1 {
+        padding-bottom: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .pt1 {
+          color: var(--text-tittle, #1c3554);
+          font-family: "Rubik", sans-serif;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 63.984px; /* 133.3% */
+        }
+      }
+      .programming-topics-cards {
+        display: flex;
+        column-gap: 16px;
+        padding-top: 16px;
+        .d1 {
+          display: flex;
+          column-gap: 16px;
+        }
+      }
+    }
+  }
+  .all-courses {
+    .container1 {
+      .d1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 56px;
+        .p1 {
+          color: var(--text-tittle, #1c3554);
+          font-family: "Rubik", sans-serif;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 63.984px; /* 133.3% */
+        }
+        .all-courses-btn {
+          display: flex;
+          column-gap: 40px;
+        }
+      }
+      .d2 {
+        display: flex;
+        justify-content: space-between;
+        .all-courses-left {
+          .d4 {
+            padding-bottom: 16px;
+            .d3 {
+              width: 237px;
+              display: flex;
+              align-items: center;
+              padding-bottom: 16px;
+              justify-content: space-between;
+              .p2 {
+                color: var(--text-tittle, #1c3554);
+                font-family: "Rubik", sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px; /* 133.333% */
+              }
+            }
+            .d10 {
+              display: flex;
+              align-items: center;
+              column-gap: 8px;
+              padding-bottom: 16px;
+              .p3 {
+                color: var(--text-tittle, #1c3554);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 550;
+                line-height: 24px; /* 171.429% */
+              }
+              .p4 {
+                color: var(--text-body, #808080);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 171.429% */
+              }
+            }
+          }
+          .span {
+            padding-bottom: 32px;
+          }
+        }
+      }
+      span {
+        background: #ccc;
+        width: 1px;
+        height: 1235px;
+      }
+      .all-courses-right {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        padding-bottom: 40px;
+        .cards-courses-right {
+          display: flex;
+          column-gap: 16px;
+        }
+      }
+      .all-courses-bottom {
+        display: flex;
+        column-gap: 16px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 160px;
+        .number {
+          width: 32px;
+          height: 32px;
+          &:hover {
+            border-radius: 4px;
+            background: var(--primary-pink, #f72585);
+            &:hover .p1 {
+              color: var(--text-white, #fff);
+              text-align: center;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 32px;
+            }
+          }
+          .p1 {
+            color: var(--text-in-field, #ccc);
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 200% */
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .photo6 {
+    display: none;
+  }
+  .popular-courses {
+    .container2 {
+      .d1 {
+        .container1 {
+          .cards {
+            flex-direction: column;
+            row-gap: 50px;
+          }
+        }
+      }
+    }
+  }
+  .programming-topics {
+    .container1 {
+      .programming-topics-cards {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 1190px) {
+  .all-courses {
+    .d2 {
+      flex-direction: column;
+      span {
+        display: none;
+      }
+      .all-courses-left {
+        display: flex;
+        column-gap: 110px;
+        row-gap: 60px;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        .span {
+          display: none;
+        }
+      }
+      .all-courses-right {
+        .cards-courses-right {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 930px) {
+  .all-courses-right {
+    .cards-courses-right {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
+    }
+  }
+}
+@media (max-width: 780px) {
+  .programming-topics {
+    .container1 {
+      .content1 {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 720px) {
+  .all-courses {
+    .container1 {
+      .d1 {
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 680px) {
+  .popular-courses {
+    .container2 {
+      .d1 {
+        .container1 {
+          .cards {
+            flex-direction: column;
+            row-gap: 50px;
+            .d7 {
+              flex-direction: column;
+              row-gap: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 630px) {
+  .programming-topics {
+    .container1 {
+      .programming-topics-cards {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 16px;
+        .d1 {
+          flex-direction: column;
+          align-items: center;
+          row-gap: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .courses {
+    .courses-programming {
+      .d2 {
+        .p1 {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+  .all-courses {
+    .container1 {
+      .d1 {
+        .all-courses-btn {
+          flex-direction: column;
+          align-items: center;
+          row-gap: 20px;
+        }
+      }
+    }
+  }
+}

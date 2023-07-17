@@ -1,0 +1,34 @@
+@use "../base" as *;
+.home-blog {
+  .container1 {
+    .home-blog-content {
+      padding-bottom: 160px;
+      .d1 {
+        color: var(--text-tittle, #1c3554);
+        font-family: "Rubik", sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 63.984px;
+        padding-bottom: 56px;
+      }
+      .home-blog-cards {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+@media (max-width: 1240px) {
+  .home-blog {
+    .container1 {
+      .home-blog-content {
+        .home-blog-cards {
+          flex-direction: column;
+          align-items: center;
+          row-gap: 50px;
+        }
+      }
+    }
+  }
+}
